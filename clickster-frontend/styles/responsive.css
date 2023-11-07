@@ -1,0 +1,99 @@
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+  :root {
+    font-size: clamp(1vh, 8px, 1vw);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0 2rem;
+    width: 100vw;
+    overflow-x: hidden;
+    background-size: 100vw;
+    background-position: top center;
+  }
+  header {
+    width: 97%;
+    top: -1rem;
+  }
+  :root {
+    font-size: 16px;
+    font-size: clamp(1.2vh, 25px, 1vw);
+  }
+  .home-about-card-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .home-about-card {
+    height: auto;
+    max-height: 34rem;
+    padding: 3rem 1rem;
+    /* flex: 1 1 40%; */
+  }
+  .home-process-card-wrapper {
+    flex-direction: column;
+  }
+  .home-process-card-wrapper > span {
+    height: 80%;
+    width: 0;
+    top: 0;
+    left: 50%;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .home-why-us-wrapper {
+    margin-bottom: 3rem;
+  }
+  .home-why-us-card {
+    flex-direction: column !important;
+    gap: 2rem;
+  }
+  .home-why-us-card-img + div {
+    max-width: 100% !important;
+  }
+  .clickster-form-inputs > input {
+    flex: 1;
+  }
+  .headline1 {
+    font-size: 5.575rem;
+  }
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .nav-btn {
+    display: block !important;
+  }
+  .nav-wrapper {
+    position: fixed;
+    height: 100vh;
+    width: 60vw;
+    background-color: black;
+    top: -2.5rem;
+    /* right: -2.5rem;
+    right: -100vw; */
+    padding: 2rem 4rem;
+    z-index: 3;
+    transition: 0.3s;
+  }
+  .navlist {
+    flex-direction: column;
+  }
+  .navlist-item > .text {
+    font-size: 2rem;
+  }
+  section {
+    padding-top: 14rem;
+  }
+  .lead3 {
+    font-size: 2rem;
+  }
+  .clickster-form-wrapper + p {
+    font-size: 2rem !important;
+  }
+  .clickster-form-wrapper.modal {
+    padding-bottom: 3rem;
+  }
+  .clickster-form-wrapper.modal .headline2 {
+    font-size: 2rem;
+  }
+}
