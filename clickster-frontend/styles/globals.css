@@ -32,9 +32,12 @@ a {
 section {
   margin: auto;
   padding-top: 11.5rem;
-  max-width: 90rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  max-width: 140rem;
+}
+.theme-1 section {
+  max-width: 90rem;
 }
 /* Typography:start */
 .text {

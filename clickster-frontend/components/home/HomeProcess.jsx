@@ -27,9 +27,9 @@ const HomeProcess = () => {
           <HomeProcessCard title="Consultation & Audit" img={"com.png"} />
           <HomeProcessCard
             title="Strategy & Implementation"
-            img={"rocket.png"}
+            img={"puzzle.png"}
           />
-          <HomeProcessCard title="Results & Growth" img={"puzzle.png"} />
+          <HomeProcessCard title="Results & Growth" img={"rocket.png"} />
         </div>
       </section>
     </div>
