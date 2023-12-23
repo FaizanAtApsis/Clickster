@@ -52,7 +52,7 @@ header {
 
 /* Hero:start */
 .hero-wrapper {
-  margin-top: 8rem;
+  padding-top: 16rem;
   /* max-width: 100%; */
 }
 .hero-wrapper > .headline1 {

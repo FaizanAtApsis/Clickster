@@ -15,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="theme-1">
       <Head>
         <title>Clickster</title>
         <meta charSet="utf-8" />
@@ -62,6 +62,6 @@ export default function Home() {
         based on individual client needs and goals. Contact Clickster for
         personalized guidance and solutions tailored to your business.
       </p>
-    </>
+    </div>
   );
 }

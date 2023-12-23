@@ -8,7 +8,7 @@ import { ButtonSecondary, Lead1 } from "../components/Typography";
 
 const ThankYou = () => {
   return (
-    <div>
+    <div className="theme-1">
       <Header2 />
       <div
         style={{
