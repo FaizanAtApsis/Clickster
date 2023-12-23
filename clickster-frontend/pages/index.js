@@ -7,7 +7,7 @@ import HomeAbout from "../components/home/HomeAbout";
 import HomeProcess from "../components/home/HomeProcess";
 import HomeWhyUs from "../components/home/HomeWhyUs";
 import Header from "../components/layout/Header";
-
+// First commit of mine
 export const metadata = {
   title: "My title",
   description: "My description",
