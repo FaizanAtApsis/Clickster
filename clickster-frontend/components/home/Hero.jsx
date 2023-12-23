@@ -8,15 +8,7 @@ const Hero = () => {
   const route = useRouter();
 
   return (
-    <section
-      className="hero-wrapper"
-      id="home"
-      style={
-        {
-          // marginTop: 0,
-        }
-      }
-    >
+    <section className="hero-wrapper" id="home" style={{}}>
       <Headline1
         className="headline1"
         style={{
