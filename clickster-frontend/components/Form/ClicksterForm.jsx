@@ -34,13 +34,16 @@ const ClicksterForm = () => {
   const formDataHandler = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.checked || e.target.value,
+      [e.target.name]:
+        e.target.type === "checkbox" ? e.target.checked : e.target.value,
     });
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
+    console.log(formData);
     setLoading(true);
+
     axios
       .post("http://localhost:5000/email-enquiry", formData)
       .then((res) => {
@@ -130,7 +133,7 @@ const ClicksterForm = () => {
               <input
                 type="checkbox"
                 name="isLeadGeneration"
-                value={isLeadGeneration}
+                checked={isLeadGeneration}
                 onChange={formDataHandler}
               />
               <span
@@ -165,7 +168,10 @@ const ClicksterForm = () => {
                 type="checkbox"
                 name="isSEO"
                 checked={isSEO}
-                onChange={formDataHandler}
+                onChange={(e) => {
+                  console.log(e.target.checked, e.target.value);
+                  formDataHandler(e);
+                }}
               />
               <span
                 style={{

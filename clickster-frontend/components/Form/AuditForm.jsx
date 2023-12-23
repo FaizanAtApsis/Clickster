@@ -31,7 +31,8 @@ const AuditForm = ({ onClick }) => {
   const formDataHandler = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.checked || e.target.value,
+      [e.target.name]:
+        e.target.type === "checkbox" ? e.target.checked : e.target.value,
     });
   };
 
