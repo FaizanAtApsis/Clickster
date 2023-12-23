@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Lead3, Title } from "../Typography";
 
 const HomeWhyUsCard = ({ title, img, lead }) => {
   return (
@@ -17,15 +18,14 @@ const HomeWhyUsCard = ({ title, img, lead }) => {
           maxWidth: "25rem",
         }}
       >
-        <p
-          className="title"
+        <Title
           style={{
             marginBottom: "1rem",
           }}
         >
           {title}
-        </p>
-        <p className="lead3">{lead}</p>
+        </Title>
+        <Lead3>{lead}</Lead3>
       </div>
     </div>
   );

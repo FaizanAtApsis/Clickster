@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Lead2 } from "../Typography";
 
 const HomeProcessCard = ({ title, img }) => {
   return (
@@ -12,14 +13,13 @@ const HomeProcessCard = ({ title, img }) => {
           objectFit="contain"
         />
       </div>
-      <p
-        className="lead2"
+      <Lead2
         style={{
           textAlign: "center",
         }}
       >
         {title}
-      </p>
+      </Lead2>
     </div>
   );
 };

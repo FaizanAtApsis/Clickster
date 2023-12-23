@@ -3,6 +3,8 @@ import Header from "../components/layout/Header";
 import Header2 from "../components/layout/Header2";
 import Link from "next/link";
 import AuditForm from "../components/Form/AuditForm";
+import Headline1 from "../components/Typography/Headline1";
+import { ButtonSecondary, Lead1 } from "../components/Typography";
 
 const ThankYou = () => {
   return (
@@ -23,31 +25,28 @@ const ThankYou = () => {
             gap: "4rem",
           }}
         >
-          <h1
-            className="headline1"
+          <Headline1
             style={{
               textAlign: "center",
             }}
           >
             Thank you!
-          </h1>
-          <p
-            className="lead1"
+          </Headline1>
+          <Lead1
             style={{
               textAlign: "center",
             }}
           >
             {"We’ll "}get back to you shortly.
-          </p>
+          </Lead1>
           <Link href="/">
-            <div
-              className="btn btn2"
+            <ButtonSecondary
               style={{
                 margin: "auto",
               }}
             >
               Go Back
-            </div>
+            </ButtonSecondary>
           </Link>
         </div>
       </div>

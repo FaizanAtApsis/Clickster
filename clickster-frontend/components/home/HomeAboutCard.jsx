@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Headline3, Lead3 } from "../Typography";
 
 const HomeAboutCard = ({ title, lead, img }) => {
   return (
@@ -7,15 +8,14 @@ const HomeAboutCard = ({ title, lead, img }) => {
       <div className="img">
         <Image layout="fill" src={img} alt="" objectFit="contain" />
       </div>
-      <h3
-        className="headline3"
+      <Headline3
         style={{
           marginBottom: "1rem",
         }}
       >
         {title}
-      </h3>
-      <p className="lead3">{lead}</p>
+      </Headline3>
+      <Lead3>{lead}</Lead3>
     </div>
   );
 };

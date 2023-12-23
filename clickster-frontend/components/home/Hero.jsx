@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
+import Headline1 from "../Typography/Headline1";
+import { ButtonPrimary, GradientText, Lead1, Lead2 } from "../Typography";
 
 const Hero = () => {
   const route = useRouter();
- 
+
   return (
     <section
       className="hero-wrapper"
@@ -15,14 +17,14 @@ const Hero = () => {
         }
       }
     >
-      <h1
+      <Headline1
         className="headline1"
         style={{
           textAlign: "center",
         }}
       >
         From Click <br /> to{" "}
-        <span
+        <GradientText
           className="gradient-text"
           style={{
             fontWeight: 700,
@@ -62,10 +64,9 @@ const Hero = () => {
               objectFit="contain"
             />
           </div>
-        </span>
-      </h1>
-      <p
-        className="lead1"
+        </GradientText>
+      </Headline1>
+      <Lead1
         style={{
           textAlign: "center",
           marginBottom: "3.5rem",
@@ -80,8 +81,8 @@ const Hero = () => {
           Click
         </span>
         ster
-      </p>
-      <div
+      </Lead1>
+      <ButtonPrimary
         className="btn btn1"
         style={{
           margin: "auto",
@@ -92,7 +93,7 @@ const Hero = () => {
         }}
       >
         Schedule Call
-      </div>
+      </ButtonPrimary>
       <p
         className="lead2"
         style={{
@@ -103,8 +104,7 @@ const Hero = () => {
         We take pride in transforming clicks into tangible, measurable results,
         ensuring that every investment brings you closer to your goals.
       </p>
-      <p
-        className="lead2"
+      <Lead2
         style={{
           textAlign: "center",
         }}
@@ -112,7 +112,7 @@ const Hero = () => {
         When you choose Clickster, {"you're"} choosing a partner {"that's"}{" "}
         passionate about your success and committed to making your business
         shine in the digital landscape.{" "}
-      </p>
+      </Lead2>
     </section>
   );
 };

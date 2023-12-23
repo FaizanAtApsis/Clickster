@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HomeAboutCard from "./HomeAboutCard";
 import AuditForm from "../Form/AuditForm";
+import { ButtonSecondary, GradientText, Headline2, Lead2 } from "../Typography";
 
 const HomeAbout = () => {
   const [show, setShow] = useState(false);
@@ -13,22 +14,20 @@ const HomeAbout = () => {
           <AuditForm onClick={() => setShow(!show)} />
         </>
       )}
-      <h2
-        className="headline2"
+      <Headline2
         style={{
           textAlign: "center",
         }}
       >
         Discover the art of driving growth through{" "}
-        <span
-          className="gradient-text"
+        <GradientText
           style={{
             fontWeight: "700",
           }}
         >
           the power of clicks!
-        </span>
-      </h2>
+        </GradientText>
+      </Headline2>
       <div className="home-about-card-wrapper">
         <HomeAboutCard
           title="Lead Generation"
@@ -50,17 +49,15 @@ const HomeAbout = () => {
           img={"/assets/images/seo.png"}
         />
       </div>
-      <p
-        className="lead2"
+      <Lead2
         style={{
           textAlign: "center",
         }}
       >
         Ready to supercharge your online success? Choose Clickster for higher
         conversions, increased revenue, and unmatched online visibility.
-      </p>
-      <p
-        className="lead2"
+      </Lead2>
+      <Lead2
         style={{
           textAlign: "center",
           marginTop: "2rem",
@@ -68,16 +65,15 @@ const HomeAbout = () => {
         }}
       >
         {"Let's"} optimize your digital journey today.
-      </p>
-      <div
-        className="btn btn2"
+      </Lead2>
+      <ButtonSecondary
         style={{
           margin: "auto",
         }}
         onClick={() => setShow(!show)}
       >
         Get Free Audit
-      </div>
+      </ButtonSecondary>
     </section>
   );
 };

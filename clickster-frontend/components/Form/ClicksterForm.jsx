@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "./Input";
 import { useRouter } from "next/router";
 import axios from "axios";
+import { GradientText, Headline2 } from "../Typography";
 
 const ClicksterForm = () => {
   const route = useRouter();
@@ -55,8 +56,7 @@ const ClicksterForm = () => {
   };
   return (
     <section className="clickster-form-wrapper" id="form" style={{}}>
-      <h2
-        className="headline2"
+      <Headline2
         style={{
           textAlign: "center",
           marginBottom: "4rem",
@@ -64,15 +64,14 @@ const ClicksterForm = () => {
       >
         Ready to achieve more with every click?
         <br />
-        <span
-          className="gradient-text"
+        <GradientText
           style={{
             fontWeight: "700",
           }}
         >
           Get in touch with Clickster now
-        </span>
-      </h2>
+        </GradientText>
+      </Headline2>
       <form onSubmit={onSubmit} className="clickster-form">
         <div className="clickster-form-inputs">
           <Input
