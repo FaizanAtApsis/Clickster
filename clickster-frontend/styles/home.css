@@ -36,6 +36,9 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
+.header3 {
+  border-color: transparent;
+}
 .brand-wrapper {
   width: 12.52594rem;
   height: 3.375rem;

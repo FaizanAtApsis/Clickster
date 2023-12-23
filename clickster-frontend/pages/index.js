@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Header from "../components/layout/Header";
+import Header3 from "../components/layout/Header3";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
         <meta name="keywords" content="keyword1, keyword2, keyword3" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Header />
+      <Header3 />
     </>
   );
 };
