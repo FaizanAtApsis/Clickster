@@ -14,6 +14,7 @@ import MainHomeForm from "../components/main-home/MainHomeForm";
 import HomeProcess from "../components/home/HomeProcess";
 import MainHomeProcess from "../components/main-home/MainHomeProcess";
 import MainHomeHelp from "../components/main-home/MainHomeHelp";
+import MainHomeFooter from "../components/main-home/MainHomeFooter";
 
 const Home = () => {
   return (
@@ -37,6 +38,7 @@ const Home = () => {
       <MainHomeForm />
       <MainHomeProcess />
       <MainHomeHelp />
+      <MainHomeFooter />
     </div>
   );
 };

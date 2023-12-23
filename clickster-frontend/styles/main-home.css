@@ -97,3 +97,8 @@
 .main-home-help > * {
   flex: 1;
 }
+.main-home-footer-icon-links {
+  padding-block: 4rem;
+  display: flex;
+  gap: 2rem;
+}
