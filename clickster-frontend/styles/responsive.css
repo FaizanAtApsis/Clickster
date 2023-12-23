@@ -95,4 +95,42 @@
   .clickster-form-wrapper.modal .headline2 {
     font-size: 2rem;
   }
+
+  /* mainhome-start */
+  .main-details-section {
+    flex-wrap: wrap;
+  }
+  .main-details-section > article {
+    flex: 1 1 40%;
+  }
+  .main-home-services {
+    padding-top: 2rem;
+  }
+  .main-b-card {
+    flex-direction: column;
+  }
+  .main-b-card > *:nth-child(1) {
+    min-height: 30rem;
+  }
+  .main-b-card-info {
+    padding: 3rem 2rem !important;
+  }
+  .main-home-form-wrapper {
+    padding: 5rem 3rem !important;
+  }
+  .main-home-form-wrapper > h2:nth-child(2) {
+    font-size: 2rem !important;
+  }
+  .main-home-help {
+    flex-direction: column;
+  }
+  .main-home-help > div:nth-child(2) {
+    width: 30rem;
+    height: 30rem;
+    flex: 0 0 30rem;
+  }
+  .mar-item {
+    min-width: 30rem !important;
+  }
+  /* mainhome-end */
 }

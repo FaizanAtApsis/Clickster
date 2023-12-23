@@ -60,6 +60,7 @@ export default MainHomeMarquee;
 
 const MarqueeItem = ({ children }) => (
   <p
+    className="mar-item"
     style={{
       paddingBlock: "1.5rem",
       minWidth: "40rem",
